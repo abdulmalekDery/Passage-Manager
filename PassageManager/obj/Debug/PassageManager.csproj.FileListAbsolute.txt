@@ -1,0 +1,72 @@
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\bin\Debug\PassageManager.exe.config
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\bin\Debug\PassageManager.exe
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\bin\Debug\PassageManager.pdb
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\obj\Debug\PassageManager.csprojResolveAssemblyReference.cache
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\obj\Debug\MainWindow.g.cs
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\obj\Debug\App.g.cs
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\obj\Debug\PassageManager_MarkupCompile.cache
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\obj\Debug\PassageManager_MarkupCompile.lref
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\obj\Debug\MainWindow.baml
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\obj\Debug\PassageManager.g.resources
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\obj\Debug\PassageManager.Properties.Resources.resources
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\obj\Debug\PassageManager.csproj.GenerateResource.Cache
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\obj\Debug\PassageManager.exe
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\obj\Debug\PassageManager.pdb
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\bin\Debug\MahApps.Metro.dll
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\bin\Debug\MahApps.Metro.pdb
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\bin\Debug\MahApps.Metro.xml
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\obj\Debug\App.baml
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\obj\Debug\Node.g.cs
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\obj\Debug\Node.baml
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\obj\Debug\Resources\Icons.baml
+C:\Users\informatic\Documents\Visual Studio 2015\Projects\PassageManager\PassageManager\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\obj\Debug\PassageManager.csprojResolveAssemblyReference.cache
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\obj\Debug\Resources\Icons.baml
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\obj\Debug\MainWindow.g.cs
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\obj\Debug\Node.g.cs
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\obj\Debug\App.g.cs
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\obj\Debug\PassageManager_MarkupCompile.cache
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\obj\Debug\PassageManager_MarkupCompile.lref
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\obj\Debug\PassageManager.exe
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\obj\Debug\PassageManager.pdb
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\bin\Debug\PassageManager.exe.config
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\bin\Debug\PassageManager.exe
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\bin\Debug\PassageManager.pdb
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\bin\Debug\MahApps.Metro.dll
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\bin\Debug\MahApps.Metro.pdb
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\bin\Debug\MahApps.Metro.xml
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\obj\Debug\App.baml
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\obj\Debug\MainWindow.baml
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\obj\Debug\Node.baml
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\obj\Debug\PassageManager.g.resources
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\obj\Debug\PassageManager.Properties.Resources.resources
+C:\Users\AbdilFattah\Desktop\PassageManager\PassageManager\obj\Debug\PassageManager.csproj.GenerateResource.Cache
+C:\Users\informatic\Desktop\PassageManager\PassageManager\bin\Debug\PassageManager.exe.config
+C:\Users\informatic\Desktop\PassageManager\PassageManager\obj\Debug\PassageManager.exe
+C:\Users\informatic\Desktop\PassageManager\PassageManager\obj\Debug\PassageManager.pdb
+C:\Users\informatic\Desktop\PassageManager\PassageManager\bin\Debug\PassageManager.exe
+C:\Users\informatic\Desktop\PassageManager\PassageManager\bin\Debug\PassageManager.pdb
+C:\Users\informatic\Desktop\PassageManager\PassageManager\bin\Debug\MahApps.Metro.dll
+C:\Users\informatic\Desktop\PassageManager\PassageManager\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\informatic\Desktop\PassageManager\PassageManager\bin\Debug\MahApps.Metro.pdb
+C:\Users\informatic\Desktop\PassageManager\PassageManager\bin\Debug\MahApps.Metro.xml
+C:\Users\informatic\Desktop\PassageManager\PassageManager\obj\Debug\PassageManager.csprojResolveAssemblyReference.cache
+C:\Users\informatic\Desktop\PassageManager\PassageManager\obj\Debug\Resources\Icons.baml
+C:\Users\informatic\Desktop\PassageManager\PassageManager\obj\Debug\Resources\IconsNonShared.baml
+C:\Users\informatic\Desktop\PassageManager\PassageManager\obj\Debug\MainWindow.g.cs
+C:\Users\informatic\Desktop\PassageManager\PassageManager\obj\Debug\Node.g.cs
+C:\Users\informatic\Desktop\PassageManager\PassageManager\obj\Debug\App.g.cs
+C:\Users\informatic\Desktop\PassageManager\PassageManager\obj\Debug\PassageManager_MarkupCompile.cache
+C:\Users\informatic\Desktop\PassageManager\PassageManager\obj\Debug\PassageManager_MarkupCompile.lref
+C:\Users\informatic\Desktop\PassageManager\PassageManager\obj\Debug\App.baml
+C:\Users\informatic\Desktop\PassageManager\PassageManager\obj\Debug\MainWindow.baml
+C:\Users\informatic\Desktop\PassageManager\PassageManager\obj\Debug\Node.baml
+C:\Users\informatic\Desktop\PassageManager\PassageManager\obj\Debug\PassageManager.g.resources
+C:\Users\informatic\Desktop\PassageManager\PassageManager\obj\Debug\PassageManager.Properties.Resources.resources
+C:\Users\informatic\Desktop\PassageManager\PassageManager\obj\Debug\PassageManager.csproj.GenerateResource.Cache
+F:\الكليّة\مشاريع\السنة الرابعة\PassageManager\PassageManager\bin\Debug\PassageManager.exe.config
+F:\الكليّة\مشاريع\السنة الرابعة\PassageManager\PassageManager\obj\Debug\PassageManager.exe
+F:\الكليّة\مشاريع\السنة الرابعة\PassageManager\PassageManager\obj\Debug\PassageManager.pdb

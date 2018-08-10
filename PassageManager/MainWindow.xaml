@@ -1,0 +1,658 @@
+﻿<Controls:MetroWindow x:Class="PassageManager.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PassageManager"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        mc:Ignorable="d" KeyDown="passageCanvas_KeyDown"
+        WindowState="Maximized" IsMaxRestoreButtonEnabled="False" 
+        Title="Passage Manager" MinHeight="650" MinWidth="825"
+        TitleCharacterCasing="Normal">
+    <Window.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="groupBoxHeaderTemplate">
+                <!--The binding represet Header="Binding Value"-->
+                <TextBlock FontSize="16" Foreground="Black" Text="{Binding}"></TextBlock>
+            </DataTemplate>
+            <Style x:Key="groupBoxStyle_Default" TargetType="GroupBox" BasedOn="{x:Null}">
+                <Setter Property="Margin" Value="2"></Setter>
+                <Setter Property="Padding" Value="4"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid Name="mainGrid">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="1"/>
+                <GradientStop Color="#64B5F6" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Name="passageGrid" Background="Transparent" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid  Grid.Row="0" Name="upperLightPart">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Rectangle Name="r1" Grid.Column="0" Margin="20" Width="150" Height="50"
+                           Fill="Transparent" >
+                    <Rectangle.Effect>
+                        <DropShadowEffect ShadowDepth="4"
+                          Color="White"
+                          Opacity="1"
+                          BlurRadius="500"
+                          Direction="180"
+                                          />
+                    </Rectangle.Effect>
+                </Rectangle>
+                <Rectangle Name="r2" Grid.Column="1" Margin="20" Width="150" Height="50"
+                           Fill="Transparent" >
+                    <Rectangle.Effect>
+                        <DropShadowEffect ShadowDepth="4"
+                          Color="White"
+                          Opacity="1"
+                          BlurRadius="500"
+                          Direction="180"
+                                          />
+                    </Rectangle.Effect>
+                </Rectangle>
+                <Rectangle Name="r3" Grid.Column="2" Margin="20" Width="150" Height="50"
+                           Fill="Transparent" >
+                    <Rectangle.Effect>
+                        <DropShadowEffect ShadowDepth="4"
+                          Color="White"
+                          Opacity="1"
+                          BlurRadius="500"
+                          Direction="180"
+                                          />
+                    </Rectangle.Effect>
+                </Rectangle>
+                <Rectangle  Name="r4" Grid.Column="3" Margin="20" Width="150" Height="50"
+                           Fill="Transparent" >
+                    <Rectangle.Effect>
+                        <DropShadowEffect ShadowDepth="4"
+                          Color="White"
+                          Opacity="1"
+                          BlurRadius="500"
+                          Direction="180"
+                                          />
+                    </Rectangle.Effect>
+                </Rectangle>
+                <Rectangle Name="r5" Grid.Column="4" Margin="20" Width="150" Height="50"
+                           Fill="Transparent" >
+                    <Rectangle.Effect>
+                        <DropShadowEffect ShadowDepth="4"
+                          Color="White"
+                          Opacity="1"
+                          BlurRadius="500"
+                          Direction="180"
+                                          />
+                    </Rectangle.Effect>
+                </Rectangle>
+                <Rectangle Name="r6" Grid.Column="5" Margin="20" Width="150" Height="50"
+                           Fill="Transparent" >
+                    <Rectangle.Effect>
+                        <DropShadowEffect ShadowDepth="4"
+                          Color="White"
+                          Opacity="1"
+                          BlurRadius="500"
+                          Direction="180"
+                                          />
+                    </Rectangle.Effect>
+                </Rectangle>
+            </Grid>
+
+            <Grid  Grid.Row="2" Name="lowerLightPart">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Rectangle Name="r7" Grid.Column="0" Margin="20" Width="150" Height="50"
+                           Fill="Transparent" >
+                    <Rectangle.Effect>
+                        <DropShadowEffect ShadowDepth="4"
+                          Color="White"
+                          Opacity="1"
+                          BlurRadius="500"
+                          Direction="180"
+                                          />
+                    </Rectangle.Effect>
+                </Rectangle>
+                <Rectangle Name="r8" Grid.Column="1" Margin="20" Width="150" Height="50"
+                           Fill="Transparent" >
+                    <Rectangle.Effect>
+                        <DropShadowEffect ShadowDepth="4"
+                          Color="White"
+                          Opacity="1"
+                          BlurRadius="500"
+                          Direction="180"
+                                          />
+                    </Rectangle.Effect>
+                </Rectangle>
+                <Rectangle Name="r9" Grid.Column="2" Margin="20" Width="150" Height="50"
+                           Fill="Transparent" >
+                    <Rectangle.Effect>
+                        <DropShadowEffect ShadowDepth="4"
+                          Color="White"
+                          Opacity="1"
+                          BlurRadius="500"
+                          Direction="180"
+                                          />
+                    </Rectangle.Effect>
+                </Rectangle>
+                <Rectangle Name="r10" Grid.Column="3" Margin="20" Width="150" Height="50"
+                           Fill="Transparent" >
+                    <Rectangle.Effect>
+                        <DropShadowEffect ShadowDepth="4"
+                          Color="White"
+                          Opacity="1"
+                          BlurRadius="500"
+                          Direction="180"
+                                          />
+                    </Rectangle.Effect>
+                </Rectangle>
+                <Rectangle Name="r11" Grid.Column="4" Margin="20" Width="150" Height="50"
+                           Fill="Transparent" >
+                    <Rectangle.Effect>
+                        <DropShadowEffect ShadowDepth="4"
+                          Color="White"
+                          Opacity="1"
+                          BlurRadius="500"
+                          Direction="180"
+                                          />
+                    </Rectangle.Effect>
+                </Rectangle>
+                <Rectangle Name="r12" Grid.Column="5" Margin="20" Width="150" Height="50"
+                           Fill="Transparent" >
+                    <Rectangle.Effect>
+                        <DropShadowEffect ShadowDepth="4"
+                          Color="White"
+                          Opacity="1"
+                          BlurRadius="500"
+                          Direction="180"
+                                          />
+                    </Rectangle.Effect>
+                </Rectangle>
+            </Grid>
+
+            <Canvas Name="passageCanvas"  Grid.Row="1" 
+                MouseDown="canv_DrawBoard_MouseDown"  
+                MouseUp="canv_DrawBoard_MouseUp"  MouseMove="canv_DrawBoard_MouseMove"
+                      >
+                <Grid Width="1345" Height="325" Margin="10,0,10,0" Name="passageWithCanvasGrid"  >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Rectangle Name="section1" Grid.Column="0" Panel.ZIndex="1" Fill="Black" Opacity="0.4"/>
+                    <Rectangle Name="section2" Grid.Column="1" Panel.ZIndex="1" Fill="Black" Opacity="0.4"/>
+                    <Rectangle Name="section3" Grid.Column="2" Panel.ZIndex="1" Fill="Black" Opacity="0.4"/>
+                    <Rectangle Name="section4" Grid.Column="3" Panel.ZIndex="1" Fill="Black" Opacity="0.4"/>
+                    <Rectangle Name="section5" Grid.Column="4" Panel.ZIndex="1" Fill="Black" Opacity="0.4"/>
+                    <Rectangle Name="section6" Grid.Column="5" Panel.ZIndex="1" Fill="Black" Opacity="0.4"/>
+                </Grid>
+            </Canvas>
+
+            
+        </Grid>
+
+        <Grid Name="controlGrid" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <GroupBox Grid.Column="0" Name="temperatureGroupBox" Header="Temperature control:"
+                      HeaderTemplate="{StaticResource groupBoxHeaderTemplate}" 
+                      Style="{StaticResource groupBoxStyle_Default}">
+                <Grid Name="temperatureGrid">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="8*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Slider Grid.Column="0" Minimum="-20"
+                            Value="{Binding ElementName=temperatureTextBlock,Path=Text,Mode=TwoWay,FallbackValue=25}" 
+                        Style="{StaticResource FlatSlider}" Name="temperatureSlider" Margin="5"
+                        VerticalAlignment="Center" />
+                    <TextBox Name="temperatureTextBlock" 
+                          Text="{Binding ElementName=temperatureSlider,Path=Value,Mode=TwoWay,StringFormat={}{0:#} }" FontSize="14" Foreground="Black" 
+                           VerticalAlignment="Center" Grid.Column="1" TextAlignment="Center"/>
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Grid.Column="1" Name="pressureGroupBox" Header="Pressure control:"
+                      HeaderTemplate="{StaticResource groupBoxHeaderTemplate}" 
+                      Style="{StaticResource groupBoxStyle_Default}">
+                <Grid Name="pressureGrid">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="8*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Slider Grid.Column="0" Value="{Binding ElementName=pressureTextBlock,Path=Text,Mode=TwoWay,FallbackValue=25}" 
+                        Style="{StaticResource FlatSlider}" Name="pressureSlider" Margin="5"
+                        VerticalAlignment="Center" />
+                    <TextBox Name="pressureTextBlock" 
+                          Text="{Binding ElementName=pressureSlider,Path=Value,Mode=TwoWay,StringFormat={}{0:#} }" FontSize="14" Foreground="Black" 
+                           VerticalAlignment="Center" Grid.Column="1" TextAlignment="Center"/>
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Grid.Column="2" Name="otherControlGroupBox" Header="Other controls:"
+                      HeaderTemplate="{StaticResource groupBoxHeaderTemplate}" 
+                      Style="{StaticResource groupBoxStyle_Default}">
+                <Grid Name="otherContrlsGrid">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+
+                    </Grid.RowDefinitions>
+                    <ToggleButton 
+                        Name="passage1ToggleButton" Click="passage1ToggleButton_Click" Grid.Column="0"
+                Style="{DynamicResource MetroCircleToggleButtonStyle}">
+                        <Rectangle Width="20"
+               Height="20"
+               Fill="{DynamicResource BlackBrush}">
+                            <Rectangle.OpacityMask>
+                                <VisualBrush Stretch="Fill"
+                         Visual="{DynamicResource appbar_image_backlight}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+                    </ToggleButton>
+
+                    <ToggleButton 
+                        Name="passage2ToggleButton" Grid.Column="1" Click="passage2ToggleButton_Click"
+                Style="{DynamicResource MetroCircleToggleButtonStyle}">
+                        <Rectangle Width="20"
+               Height="20"
+               Fill="{DynamicResource BlackBrush}">
+                            <Rectangle.OpacityMask>
+                                <VisualBrush Stretch="Fill"
+                         Visual="{DynamicResource appbar_image_backlight}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+                    </ToggleButton>
+
+                    <ToggleButton 
+                        Name="passage3ToggleButton" Grid.Column="2" Click="passage3ToggleButton_Click"
+                Style="{DynamicResource MetroCircleToggleButtonStyle}">
+                        <Rectangle Width="20"
+               Height="20"
+               Fill="{DynamicResource BlackBrush}">
+                            <Rectangle.OpacityMask>
+                                <VisualBrush Stretch="Fill"
+                         Visual="{DynamicResource appbar_image_backlight}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+                    </ToggleButton>
+
+                    <ToggleButton 
+                        Name="passage4ToggleButton" Grid.Column="3" Click="passage4ToggleButton_Click"
+                Style="{DynamicResource MetroCircleToggleButtonStyle}">
+                        <Rectangle Width="20"
+               Height="20"
+               Fill="{DynamicResource BlackBrush}">
+                            <Rectangle.OpacityMask>
+                                <VisualBrush Stretch="Fill"
+                         Visual="{DynamicResource appbar_image_backlight}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+                    </ToggleButton>
+
+                    <ToggleButton 
+                        Name="passage5ToggleButton" Grid.Column="4" Click="passage5ToggleButton_Click"
+                Style="{DynamicResource MetroCircleToggleButtonStyle}">
+                        <Rectangle Width="20"
+               Height="20"
+               Fill="{DynamicResource BlackBrush}">
+                            <Rectangle.OpacityMask>
+                                <VisualBrush Stretch="Fill"
+                         Visual="{DynamicResource appbar_image_backlight}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+                    </ToggleButton>
+
+                    <ToggleButton 
+                        Name="passage6ToggleButton" Grid.Column="5" Click="passage6ToggleButton_Click"
+                Style="{DynamicResource MetroCircleToggleButtonStyle}">
+                        <Rectangle Width="20"
+               Height="20"
+               Fill="{DynamicResource BlackBrush}">
+                            <Rectangle.OpacityMask>
+                                <VisualBrush Stretch="Fill"
+                         Visual="{DynamicResource appbar_image_backlight}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+                    </ToggleButton>
+
+                    <Button Name="addPersonButton"  Grid.Column="6"
+                            Click="addPersonButton_Click" Style="{DynamicResource MetroCircleButtonStyle}">
+                        <Rectangle Width="20"
+               Height="20"
+               Fill="{DynamicResource BlackBrush}">
+                            <Rectangle.OpacityMask>
+                                <VisualBrush Stretch="Fill"
+                         Visual="{DynamicResource appbar_image_night_person}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+                    </Button>
+
+                    <ToggleButton Grid.Column="7" Name="fireToggleButton" Click="fireToggleButton_Click"
+                                  Style="{DynamicResource MetroCircleToggleButtonStyle}"
+                                  >
+                        <Rectangle Width="20"
+               Height="20"
+               Fill="{DynamicResource BlackBrush}">
+                            <Rectangle.OpacityMask>
+                                <VisualBrush Stretch="Fill"
+                         Visual="{DynamicResource appbar_warning_circle}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+                    </ToggleButton>
+
+                    <ToggleButton 
+                        Name="morningLightToggleButton" Grid.Column="8"
+                        Click="morningLightToggleButton_Click"
+                Style="{DynamicResource MetroCircleToggleButtonStyle}">
+                        <Rectangle Width="20"
+               Height="20"
+               Fill="{DynamicResource BlackBrush}">
+                            <Rectangle.OpacityMask>
+                                <VisualBrush Stretch="Fill"
+                         Visual="{DynamicResource appbar_lightbulb_coil}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+                    </ToggleButton>
+                
+                    
+                    <ToggleButton 
+                        Name="allLightsToggleButton" Grid.Column="9" Click="allLightsToggleButton_Click"
+                Style="{DynamicResource MetroCircleToggleButtonStyle}">
+                        <Rectangle Width="20"
+               Height="20"
+               Fill="{DynamicResource BlackBrush}">
+                            <Rectangle.OpacityMask>
+                                <VisualBrush Stretch="Fill"
+                         Visual="{DynamicResource appbar_image_backlight}"/>
+                            </Rectangle.OpacityMask>
+                        </Rectangle>
+                    </ToggleButton>
+                </Grid>
+            </GroupBox>
+        </Grid>
+        
+        <Grid Name="portsGrid" Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <GroupBox Grid.Column="0" Name="dataPortGroupBox" Header="Data port:"
+                      HeaderTemplate="{StaticResource groupBoxHeaderTemplate}" 
+                      Style="{StaticResource groupBoxStyle_Default}">
+                <Grid Name="dataPortGrid" Margin="20,0,20,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="2*"/>
+                   </Grid.RowDefinitions>
+                    <Grid Grid.Row="1" Cursor="Hand" Grid.Column="0" >
+                        <Rectangle Name="d7Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" FontSize="18" FontWeight="Bold" TextAlignment="Center" x:Name="d7TextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Cursor="Hand" Grid.Column="1" >
+                        <Rectangle Name="d6Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" FontSize="18" FontWeight="Bold" x:Name="d6TextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Cursor="Hand" Grid.Column="2" >
+                        <Rectangle Name="d5Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" FontSize="18" FontWeight="Bold" x:Name="d5TextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+                    <Grid  Grid.Row="1" Cursor="Hand" Grid.Column="3" >
+                        <Rectangle Name="d4Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" FontSize="18" FontWeight="Bold" x:Name="d4TextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Cursor="Hand" Grid.Column="4" >
+                        <Rectangle Name="d3Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" FontSize="18" FontWeight="Bold" x:Name="d3TextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Cursor="Hand" Grid.Column="5" >
+                        <Rectangle Name="d2Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" FontSize="18" FontWeight="Bold" x:Name="d2TextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Cursor="Hand" Grid.Column="6" >
+                        <Rectangle Name="d1Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" FontSize="18" FontWeight="Bold" x:Name="d1TextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+                    <Grid  Grid.Row="1" Cursor="Hand" Grid.Column="7" >
+                        <Rectangle Name="d0Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" FontSize="18" FontWeight="Bold" x:Name="d0TextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+
+                    <Grid  Grid.Row="1" Cursor="Hand" Grid.Column="8" >
+                        <TextBlock Text="Write" FontSize="14" FontWeight="Bold" 
+                                   x:Name="modeTextBlock" VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="Red"/>
+                    </Grid>
+                    <TextBlock Text="D7" Grid.Column="0" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="d7TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+
+                    <TextBlock Text="D6" Grid.Column="1" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="d6TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+                    
+                    <TextBlock Text="D5" Grid.Column="2" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="d5TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+                    
+                    <TextBlock Text="D4" Grid.Column="3" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="d4TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+
+                    <TextBlock Text="D3" Grid.Column="4" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="d3TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+                    
+                    <TextBlock Text="D2" Grid.Column="5" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="d2TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+                    
+                    <TextBlock Text="D1" Grid.Column="6" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="d1TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+                    
+                    <TextBlock Text="D0" Grid.Column="7" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="d0TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Grid.Column="1" Name="inputPortGroupBox" Header="Input port:"
+                      HeaderTemplate="{StaticResource groupBoxHeaderTemplate}" 
+                      Style="{StaticResource groupBoxStyle_Default}">
+                <Grid Name="inputPortGrid"  Margin="20,0,20,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="2*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="1" Cursor="Hand" Grid.Column="0" >
+                        <Rectangle Name="I7Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" FontSize="18" FontWeight="Bold" x:Name="I7TextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Cursor="Hand" Grid.Column="1" >
+                        <Rectangle Name="I6Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" x:Name="I6TextBlock" FontSize="18" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Cursor="Hand" Grid.Column="2" >
+                        <Rectangle Name="I5Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" FontSize="18" FontWeight="Bold" x:Name="I5TextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Cursor="Hand" Grid.Column="3" >
+                        <Rectangle Name="I4Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" FontSize="18" FontWeight="Bold" x:Name="I4TextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Cursor="Hand" Grid.Column="4" >
+                        <Rectangle Name="I3Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" FontSize="18" FontWeight="Bold" x:Name="I3TextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+
+                    <TextBlock Text="I7" Grid.Column="0" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="i7TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+
+                    <TextBlock Text="I6" Grid.Column="1" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="i6TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+
+                    <TextBlock Text="I5" Grid.Column="2" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="i5TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+
+                    <TextBlock Text="I4" Grid.Column="3" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="i4TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+
+                    <TextBlock Text="I3" Grid.Column="4" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="i3TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+                </Grid>
+            </GroupBox>
+
+            <GroupBox Grid.Column="2" Name="outputPortGroupBox" Header="Outport port:"
+                      HeaderTemplate="{StaticResource groupBoxHeaderTemplate}" 
+                      Style="{StaticResource groupBoxStyle_Default}">
+                <Grid Name="outputPortGrid" Margin="20,0,20,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="2*"/>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="1" Cursor="Hand" Grid.Column="0" >
+                        <Rectangle Name="o3Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" FontSize="18" FontWeight="Bold" x:Name="o3TextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Cursor="Hand" Grid.Column="1" >
+                        <Rectangle Name="o2Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" FontSize="18" FontWeight="Bold" x:Name="o2TextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+                    <Grid Grid.Row="1" Cursor="Hand" Grid.Column="2" >
+                        <Rectangle Name="o1Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" FontSize="18" FontWeight="Bold" x:Name="o1TextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+                    <Grid  Grid.Row="1" Cursor="Hand" Grid.Column="3" >
+                        <Rectangle Name="o0Rec" Fill="#1E88E5" Stroke="#0D47A1" />
+                        <TextBlock Text="0" FontSize="18" FontWeight="Bold" x:Name="o0TextBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+                    </Grid>
+                    <TextBlock Text="O3" Grid.Column="0" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="o3TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+                    <TextBlock Text="O2" Grid.Column="1" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="o2TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+                    <TextBlock Text="O1" Grid.Column="2" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="o1TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+                    <TextBlock Text="O0" Grid.Column="3" FontSize="18" FontWeight="Bold" Foreground="Black"
+                                   x:Name="o0TextBlockTitle" VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" TextAlignment="Center"
+                                   TextTrimming="None"/>
+                </Grid>
+            </GroupBox>
+
+        </Grid>
+        
+    </Grid>
+</Controls:MetroWindow>

@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="OurGraph.Node"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OurGraph"
+             mc:Ignorable="d"  
+             Width="50" Height="50"
+            d:DesignHeight="20" d:DesignWidth="20">
+
+    <Grid Width="35" Height="35" Cursor="Hand"  >
+
+        <Ellipse Name="ellipse" Margin="0" Fill="#FFF7B803" Stroke="#FFFF9000" >
+            
+        </Ellipse>
+        
+        <TextBlock x:Name="textBlock" VerticalAlignment="Center" HorizontalAlignment="Center"  TextTrimming="None"
+                   Foreground="#FFffff"/>
+
+    </Grid>
+
+</UserControl>
